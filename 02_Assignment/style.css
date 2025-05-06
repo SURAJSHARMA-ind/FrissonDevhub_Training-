@@ -1,0 +1,193 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #131314;
+  display: flex;
+}
+#company {
+  background-color: rgb(222, 194, 12);
+  padding: 2px;
+  border-radius: 2px;
+  width: fit-content;
+  height: fit-content;
+}
+.topContainer {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.secContainer {
+  background-color: #0e1215;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+  width: 90vw;
+}
+#centerImage {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+}
+
+#usercontainer {
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  width: 70vw;
+  background: radial-gradient(circle at 30% 40%, #3a4b5d 0%, transparent 30%),
+    radial-gradient(circle at 70% 60%, #4d5f6e 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, #2b3a49 0%, #1e2a36 100%);
+}
+
+.miniUserContainer {
+  position: absolute;
+  bottom: 18%;
+  right: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(circle at 30% 40%, #ac3f3f 0%, transparent 30%),
+    radial-gradient(circle at 70% 60%, #eb652c 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, #ea703c 0%, #9a4464 100%);
+  height: 20vh;
+  width: 15vw;
+  border-radius: 1rem;
+  text-align: left;
+  color: white;
+}
+#smimage {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+#sidebar {
+  background-color: #fff;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.flex {
+  display: flex;
+}
+#peopleSearchContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  border-radius: 2px;
+  padding: 2px;
+  width: 100%;
+  border: 1px solid black;
+  height: 4vh;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: rgb(69, 67, 67);
+  align-items: center;
+}
+.sidetop {
+  justify-content: space-between;
+}
+#containerUsername {
+  color: white;
+  position: absolute;
+  bottom: 15vh;
+  left: 9vw;
+  font-size: small;
+}
+#participantsList {
+  height: 62vh;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+.circle {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #2b3a49;
+}
+.btns {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1vw;
+}
+.contributer {
+  border: 1px solid black;
+  border-radius: 0.5em;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: medium;
+  align-items: center;
+  color: rgb(55, 54, 54);
+}
+
+#door {
+  background: rgb(233, 195, 8);
+  width: fit-content;
+  height: fit-content;
+  padding: 2px;
+  border-radius: 1px;
+  margin-bottom: 0.5rem;
+}
+
+#username {
+  position: absolute;
+  bottom: 1%;
+  padding: 2px;
+  left: 5%;
+  font-size: medium;
+}
+#microphone {
+  position: absolute;
+  bottom: 86%;
+  left: 72%;
+}
+
+.emojis {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2a36;
+  width: 18vw;
+  gap: 0.5rem;
+  border-radius: 2rem;
+  height: 8vh;
+  padding: 0.5vh;
+}
+
+#bottomContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  color: white;
+  align-items: center;
+  padding: 2vh;
+}
