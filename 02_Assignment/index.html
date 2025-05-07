@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Google Meet</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,107 +17,133 @@
         <div>
           <div id="door">
             <img
-              src="./assets/door-open-solid.svg"
+              src="./assets/meeting_room_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
               width="15px"
               height="15px"
               alt="image"
             />
           </div>
           <div>
-
             <div id="usercontainer">
               <img
-              id="microphone"
-              src="./assets/microphone-solid.svg"
-              width="15px"
-              height="15px"
-              alt="microphone"
-            />
-            <img
-            id="centerImage"
-            src="./assets/miles_morales_wallpaper_by_blazelmage_dfztnww-pre.jpg"
-            alt=""
-            width="40"
-            height="40"
-            />
-            <div class="miniUserContainer">
-              <img
-              id="smimage"
-              src="./assets/miles_morales_wallpaper_by_blazelmage_dfztnww-pre.jpg"
-              alt=""
-              width="40"
-              height="40"
+                id="microphone"
+                src="./assets/mic_off_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+                width="15px"
+                height="15px"
+                alt="microphone"
               />
-              <div id="username">
-                <h6 id="name">Suraj Sharma</h6>
+              <div class="centerContent">
+                <img
+                  id="centerImage"
+                  src="./assets/miles_morales_wallpaper_by_blazelmage_dfztnww-pre.jpg"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+              </div>
+              <div class="miniUserContainer">
+                <img
+                  id="smimage"
+                  src="./assets/miles_morales_wallpaper_by_blazelmage_dfztnww-pre.jpg"
+                  alt=""
+                  width="40"
+                  height="40"
+                />
+                <div class="miniName">
+                  <h6>Suraj Sharma</h6>
+                </div>
+              </div>
+              <div class="mainName">
+                <h4>Suraj Sharma</h4>
               </div>
             </div>
-            <h4 id="containerUsername">Suraj Sharma</h4>
+            <!-- <h4 id="containerUsername">Suraj Sharma</h4> -->
           </div>
           </div>
-        </div>
-        
-        <!-- sidbar -->
+              <!-- sidbar -->
+         
         <div id="sidebar">
           <div id="peopleSearchContainer" >
             <div class="flex sidetop " 
-            <h4>People</h4>
-            <img src="./assets/close.svg" width="15px" height="15px" alt="">
+            <p style="font-size: medium;">People</p>
+            <img id="sidebarClose" src="./assets/close.svg" width="20px" height="20px" alt="">
           </div>
           <div class="searchbar ">
-            <img src="./assets/search.svg" width="15" height="15" alt="">
+            <img src="./assets/search.svg" width="15" height="15" style="margin-left: 5px;" alt="">
             <h5>Search for people</h5>
           </div>
         </div>
         <div>
-
-          <p style="font-size: x-small ;padding-bottom: 2px; color: rgb(73, 73, 73);">In the meeting</p>
+          <p style=" font-size: small ;padding:1vh; color: rgb(73, 73, 73);">In the meeting</p>
           <div class="contributer ">
             <h4>contributers</h4>
             <div class="flex">
-              <p>9</p>
+              <p>2</p>
               <img src="./assets/arrow.svg" alt="">
             </div>
           </div>
           </div>
           <div id="participantsList">
-
+            <div class="participantsContainer">
+              <div class="flex participants">
+                <span class="circle">K</span>
+                <p>Kapil Sharma</p>
+                <img src="./assets/more_vert_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+              </div>
+              <div class="flex participants">
+                <span class="circle">S</span>
+                <p>Suraj Sharma</p>
+                <img src="./assets/more_vert_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+              </div>
+            </div>
+            
+            
           </div>
         </div>
-      </div>
+
+        </div>
+        
+        <div class="emojis">
+          <div class="hover">💖</div>
+          <div class="hover">👍</div>
+          <div class="hover">👏</div>
+          <div class="hover">🥳</div>
+          <div class="hover">😂</div>
+          <div class="hover">🥺</div>
+          <div class="hover">😲</div>
+          <div class="hover">💀</div>
+          <div class="hover">👎</div>
+         </div>
 <!-- bottom component -->
- <div class="emojis">
-  <div>😁</div>
-  <div>🤣</div>
-  <div>🥳</div>
-  <div>🙃</div>
-  <div>🥺</div>
-  <div>💀</div>
- </div>
-      <div id="bottomContainer">
-        <div>
-          <p>12:45 | fzo-snd9o</p>
+        <div class="bottomContainer ">
+          <div>
+            <p>12:45 | fzo-snd9o</p>
+          </div>
+          <div class="flex btns wrap">
+            <div class="micContainer ">
+             <span ><img src="./assets/more_horiz_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="" srcset=""></span>
+             <span class="circle"> <img src="./assets/mic_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+            </div>
+            <span class="hover videoCam ">
+              <img class="videoCamArrow" src="./assets/keyboard_arrow_up_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+              <img class="videoCamIcon" src="./assets/videocam_off_24dp_5D0E07_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </span>
+            <span class="hover circle "><img src="./assets/closed_caption_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+            <span class="hover circle "><img src="./assets/mood_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+            <span class="hover circle "><img src="./assets/present_to_all_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+            <span class="hover circle "><img src="./assets/back_hand_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+            <span class="hover circle "><img src="./assets/more_vert_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+            <span class="hover endCall"><img src="./assets/call_end_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+          </div>
+  
+            <div class="flex btns">
+              <span class="hover"><img src="./assets/info_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+              <span class="hover"><img id="sidebarToggle" src="./assets/group_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+              <span class="hover"><img src="./assets/chat_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+              <span class="hover"><img src="./assets/apps_24dp_D3E0E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+            </div>
         </div>
-        <div class="flex btns">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div> 
-            <img src="./assets/microphone-solid.svg" width="20px" height="20px" alt="microphone" />
-          </div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          </div>
-          <div class="flex btns">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-       
       </div>
-
     </div>
     <script src="./script.js"></script>
   </body>
