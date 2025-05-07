@@ -30,8 +30,8 @@ body {
   background-color: #0e1215;
   padding: 0 1rem;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   align-items: flex-start;
   height: 100vh;
   gap: 1rem;
@@ -57,8 +57,13 @@ body {
 
 @media (max-width: 600px) {
   #sidebar {
-    display: none !important;
+    /* display: none !important; */
+    display: float;
   }
+  .miniUserContainer{
+    height: 50vh;
+  }
+
 }
 #centerImage {
   border-radius: 50%;
@@ -165,7 +170,13 @@ body {
     bottom: 1rem;
   }
  #sidebar {
-   display: none;
+   /* display: none; */
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 60vh;
+   z-index: 1000;
  }
 }
 
@@ -187,7 +198,9 @@ body {
   #sidebar {
    overflow: visible;
   }
-
+.secContainer{
+  height: 100vh;
+}
 }
 #smimage {
   border-radius: 50%;
@@ -373,5 +386,5 @@ body {
 }
 
 .usercontainer-fullwidth {
-  width: 90vw !important;
+  width: 80vw ;
 }
