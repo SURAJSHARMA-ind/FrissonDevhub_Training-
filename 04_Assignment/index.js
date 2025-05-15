@@ -11,6 +11,12 @@
     closeIcon.style.display = isOpen ? "block" : "none";
   }
 
+
+function toggleSearch() {
+  const searchContainer = document.getElementById('responsiveSearch');
+  searchContainer.classList.toggle('active');
+}
+
 document.getElementById("add-more-btn").addEventListener("click", function () {
   const selectedAffiliation = document.querySelector('input[name="affiliation"]:checked');
   if (!selectedAffiliation) {

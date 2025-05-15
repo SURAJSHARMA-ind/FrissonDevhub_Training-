@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Navbar</title>
-    <link
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Navbar</title>
+ <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -14,53 +14,76 @@
     />
 </head>
 <body>
-    <!--navbar -->
-    <div class="navContainer"> 
-     <nav class="navbar">
-        <div class="logo">
-            <a href="#">History Class</a>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search: City, Place, Art, Architecture, Park, Collection...">
-            <button><img src="./assets/camera.svg" alt="Search Icon"></button>
-        </div>
 
-        <span class="menu-toggle" onclick="toggleMenu()">
-          <img id="menu-icon" src="./assets/menu.svg" alt="Menu" />
-          <img id="close-icon" src="./assets/close.svg" alt="Close" style="display: none;" />
-        </span>
+  <!-- Navbar -->
+  <div class="navContainer">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">History Class</a>
+      </div>
 
+      <!-- Desktop Search Bar -->
+      <div class="search-bar" id="mainSearchBar">
+        <img id="searchIcon" src="./assets/search.svg" alt="">
+        <input type="text" placeholder="Search: City, Place, Art, Architecture, Park, Collection...">
+        <button><img src="./assets/camera.svg" alt="Search Icon"></button>
+      </div>
 
-        <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Collections</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Explore</a></li>
-            <li>Welcome Kapil</li>
-        </ul>
-      </nav>
+      <!-- Mobile Search Icon -->
+      <img onclick="toggleSearch()" id="searchResponsive" src="./assets/search.svg" alt="Search Icon" />
+
+      <!-- Hamburger Menu -->
+      <span class="menu-toggle" onclick="toggleMenu()">
+        <img id="menu-icon" src="./assets/menu.svg" alt="Menu" />
+        <img id="close-icon" src="./assets/close.svg" alt="Close" style="display: none;" />
+      </span>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Explore</a></li>
+        <li>Welcome Kapil</li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Mobile Responsive Search -->
+  <div class="responsive-search" id="responsiveSearch">
+    <div class="search-bar responsive">
+      <input type="text" placeholder="Search anything...">
+      <button><img src="./assets/camera.svg" alt="Search"></button>
+      <img src="./assets/close.svg" alt="Close" id="closeSearch" onclick="toggleSearch()">
     </div>
+  </div>
 
+  <!-- Status Bar -->
   <div class="statusContainer">
     <div class="status-bar">
-      <p>STATUS: NOT LIVE</P>
-        <div class="status-bar-buttons">
-          <button>Submit</button>
-          <span class="save"><img src="./assets/save.svg" alt=""></span> 
-          <span class="close"><img src="./assets/blackClose.svg" alt=""></span>
-        </div>
+      <p>STATUS <span>: NOT LIVE</span></p>
+      <div class="status-bar-buttons">
+        <button>SUBMIT</button>
+        <button class="save"><img src="./assets/save.svg" alt="save"></button>
+        <button class="close"><img src="./assets/blackClose.svg" alt="close"></button>
+      </div>
+      <div class="status-bar-resolution">
+        <button><img src="./assets/laptop.svg" alt="icon"></button>
+        <button><img src="./assets/phone.svg" alt="icon"></button>
+      </div>
     </div>
   </div>
 
+  <!-- Cover Upload -->
   <div class="cover">
     <div class="image-upload">
-        <p>+ Add a Headshot</p>
-      </div>
+      <h1>+</h1>
+      <p>*Add a Headshot</p>
+    </div>
   </div>
-  </div>
-
-<div class="container">
-  <div class="smallContainer">
+  
+<!-- Form -->
+  <div class="container">
       <div class="left">
         <div class="form-group" id="lal">
           <div class="question">
@@ -77,11 +100,13 @@
             <i class="fa-regular fa-circle-question"></i>
           </div>
 
+          
           <select>
             <option value="">Select Profession</option>
           </select>
         </div>
-
+        
+        <hr>
         <div class="form-group">
           <div class="question" style="align-items: center">
             <label>Affiliations</label>
@@ -113,15 +138,15 @@
           </div>
           <div id="dynamic-fields-container"></div>
         </div>
-
+          <hr>
         <div class="form-group" id="lal">
           <div class="question">
             <label>About *</label>
             <i class="fa-regular fa-circle-question"></i>
           </div>
-          <textarea rows="5"></textarea>
+          <textarea rows="5" placeholder="Tell the world about the project The scale/size, materials. context, design concept, impact, etc"></textarea>
         </div>
-
+        <hr>
         <div
           class="form-group"
           style="
@@ -133,9 +158,9 @@
           <label style="width: 30%"
             >Date <i class="fa-regular fa-circle-question"></i
           ></label>
-          <button>Add More</button>
+          <button>+ Add More</button>
         </div>
-
+        <hr>
         <div
           class="form-group"
           style="
@@ -151,28 +176,57 @@
               style="padding-left: 1%"
             ></i
           ></label>
-          <button>Add More</button>
+          <button>+ Add More</button>
         </div>
       </div>
 
       <div class="right">
-        <div class="photo-upload">
-          <div class="upload-placeholder">+ Add an Image</div>
-          <p>Image Date - Image Caption</p>
+        <div class="divider" id="lal">
+          <div style="display: flex; align-items: center;">
+            <p class="tag" id="photo">ADDITIONAL PHOTOGRAPHS</p>
+            <i style="padding-left: 0.5rem;" class="fa-regular fa-circle-question"></i>
+          </div>
+          <label style="padding-right: 1%;">0 Images, Show less <i style="padding-left: 0.3rem;" class="fa-solid fa-angle-up"></i></label>
+        </div>
+        <div class="square">
+          <div class="upload-placeholder" id="lal">
+            <p class="plus">+</p>
+            <label style="margin-bottom: 1.8rem;">* Add an Image</label>
+          </div>
+          <p class="up">Image Date - Image Caption</p>
+          <p class="down">Image Description</p>
+        </div>
+         <div class="divider" id="lal">
+          <div style="display: flex; align-items: center;">
+            <p class="tag">DRAWINGS *</p>
+            <i style="padding-left: 0.5rem;" class="fa-regular fa-circle-question"></i>
+          </div>
+          <label style="padding-right: 1%;">0 Drawings, Show less <i style="padding-left: 0.3rem;" class="fa-solid fa-angle-up"></i></label>
+        </div>
+        <div class="square" >
+          <div class="upload-placeholder" id="lal">
+            <p class="plus">+</p>
+            <label style="margin-bottom: 1.8rem;">* Add a Drawing</label>
+          </div>
+          <p class="up">Drawing Date - Drawing Caption</p>
+          <p class="down">Drawing Description</p>
         </div>
 
-        <div class="drawing-upload">
-          <div class="upload-placeholder">+ Add a Drawing</div>
-          <p>Drawing Date - Drawing Caption</p>
+         <div class="divider">
+          <div style="display: flex; align-items: center;">
+            <p class="tag" style="color: #b01c1c;">NOTES</p>
+            <i style="padding-left: 0.5rem;" class="fa-regular fa-circle-question"></i>
+          </div>
         </div>
 
-        <div class="button-group">
-          <button class="submit-btn">SUBMIT</button>
-          <button class="cancel-btn">CANCEL</button>
+        <div class="notes">
+          <span>Questions OR Comments OR Additional Information about the Person</span>
+          <textarea name="" id=""></textarea>
         </div>
-      </div>
       </div>
     </div>
-  <script src="./index.js"></script>
+
+ <script src="./index.js"></script>
+
 </body>
 </html>
