@@ -263,11 +263,11 @@ body {
 }
 
 .square {
-  width: 35vh;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  background-color: #eee;
-  height: 32vh;
+    width: 35vh;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #eee;
+    height: 37vh;
 }
 
 /* .photo-upload,
@@ -338,14 +338,14 @@ hr{
 }
 
 .divider {
-  background-color: #eee;
-  height: 2rem;
-  margin-bottom: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 2%;
-  width: 90%;
+     background-color: #eee;
+    height: 2rem;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    width: 90%;
 }
 
 .tag {
@@ -517,17 +517,20 @@ hr{
   #photo{
     width: 8rem;
   }
-  .square{
-    width: 100%;
-  }
+ 
   .notes textarea{
     width: 100%;
   }
-  .divider{
-    width: 100%;
-  }
+      .divider {
+        width: 100%;
+    }
 
-  .square{
-    height: 22vh;
-  }
 } 
+
+
+@media screen and (max-width: 480px) {
+    .square {
+        height: 30vh;
+        width: 100%;
+    }
+  }
